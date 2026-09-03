@@ -14,11 +14,10 @@ manuscript figures and tables:
 https://github.com/penarsab/pm10-bayesian-analysis-public
 ```
 
-The archived release DOI will be added after the first GitHub release is
-archived by Zenodo:
+The archived release is available at:
 
 ```text
-[ARCHIVED RELEASE DOI]
+https://doi.org/10.5281/zenodo.22287111
 ```
 
 The package does not redistribute the original raw working `data/raw` and

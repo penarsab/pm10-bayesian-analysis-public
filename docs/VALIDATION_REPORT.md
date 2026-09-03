@@ -2,8 +2,8 @@
 
 Build date: 2026-09-03
 
-Lifecycle status: pre-release technical validation. Public GitHub release,
-Zenodo archival DOI, article DOI, and final badge metadata remain pending.
+Lifecycle status: public GitHub release archived by Zenodo. The associated
+article preprint URL is recorded in `CITATION.cff`.
 
 ## Commands and results
 
@@ -67,7 +67,4 @@ rewritten by `scripts/validate_release.py`.
 
 ## Warnings and unresolved items
 
-1. Public GitHub release has not yet been created.
-2. Zenodo archival DOI has not yet been minted.
-3. Article DOI remains a placeholder in `CITATION.cff`.
-4. The README DOI badge still contains the archived-release DOI placeholder.
+No unresolved release-package validation items remain.

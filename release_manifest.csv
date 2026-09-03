@@ -1,6 +1,6 @@
 path,size_bytes
 .gitignore,275
-CITATION.cff,670
+CITATION.cff,818
 configs/export-profiles.yaml,1063
 configs/figure-config.yaml,1773
 configs/palette.yaml,1346
@@ -43,12 +43,12 @@ data/frozen_results/table_sources/table_s9_missingness_audit.csv,2597
 data/frozen_results/table_sources/timezone_dst_audit.csv,1141
 data/README.md,1536
 docs/ANALYTICAL_SCOPE.md,1633
-docs/DATA_AVAILABILITY_TEXT.md,1095
+docs/DATA_AVAILABILITY_TEXT.md,1057
 docs/DATA_PROVENANCE.md,1716
 docs/FIGURE_MANIFEST.md,5069
 docs/REPRODUCIBILITY.md,1947
 docs/TABLE_MANIFEST.md,3711
-docs/VALIDATION_REPORT.md,2786
+docs/VALIDATION_REPORT.md,2586
 environment.yml,163
 figure_manifest.yaml,869
 figures/generated/main/dag.tex,4012
@@ -92,7 +92,7 @@ LICENSE,1074
 LICENSE-CONTENT.md,605
 Makefile,491
 pyproject.toml,455
-README.md,5382
+README.md,5393
 release_manifest.csv,9288
 requirements.txt,43
 scripts/generate_all_figures.py,2922

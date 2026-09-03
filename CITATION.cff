@@ -5,15 +5,19 @@ type: software
 version: "1.0.0"
 license: MIT
 authors:
+  - family-names: "Penar"
+    given-names: "Sabina"
   - family-names: "Baranowski"
     given-names: "Jerzy"
 repository-code: "https://github.com/penarsab/pm10-bayesian-analysis-public"
-doi: "[ARCHIVED RELEASE DOI]"
+doi: "10.5281/zenodo.22287111"
 date-released: "2026-09-03"
 preferred-citation:
   type: article
-  title: "Bayesian Dynamic Regression for One-Hour-Ahead PM10 Forecasting in Krakow"
+  title: "Bayesian Modeling of PM10 in Krakow Using Meteorological and Seasonal Factors"
   authors:
+    - family-names: "Penar"
+      given-names: "Sabina"
     - family-names: "Baranowski"
       given-names: "Jerzy"
-  doi: "[ARTICLE DOI]"
+  url: "https://www.preprints.org/manuscript/202607.1392"
