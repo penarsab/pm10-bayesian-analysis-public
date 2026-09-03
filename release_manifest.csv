@@ -88,8 +88,8 @@ figures/reference/supplementary/s2_residual_diagnostics.pdf,34448
 figures/reference/supplementary/s3_pareto_k_diagnostics.pdf,62430
 figures/reference/supplementary/s4_sensitivity_comparison.pdf,40761
 figures/reference/supplementary/s5_high_pollution_safeguard.pdf,36801
-LICENSE,1074
-LICENSE-CONTENT.md,605
+LICENSE,1090
+LICENSE-CONTENT.md,659
 Makefile,491
 pyproject.toml,455
 README.md,5519
