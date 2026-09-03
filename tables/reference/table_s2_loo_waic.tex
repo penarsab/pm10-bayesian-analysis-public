@@ -1,0 +1,16 @@
+\begin{table}[H]
+\centering
+\caption{{PSIS-LOO and WAIC comparison across the final Bayesian models. Higher elpd is better.}\label{tab:s2-loo}}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Model & elpd$_{\mathrm{loo}}$ & SE & $p_{\mathrm{loo}}$ & elpd$_{\mathrm{waic}}$ & $\Delta$ elpd & SE($\Delta$) & Max $k$ & $n(k>0.7)$ & Rank\\
+\midrule
+M3 & -109852.022 & 256.528 & 18.986 & -109852.002 & 0.000 & 0.000 & 0.237 & 0 & 0\\
+M0 & -111173.781 & 254.088 & 6.290 & -111173.770 & -1321.759 & 52.091 & 0.220 & 0 & 1\\
+M2 & -134318.311 & 184.402 & 15.084 & -134318.296 & -24466.289 & 248.543 & 0.235 & 0 & 2\\
+M1 & -135566.811 & 184.408 & 6.644 & -135566.804 & -25714.789 & 249.032 & 0.244 & 0 & 3\\
+\bottomrule
+\end{tabular}}
+\end{table}

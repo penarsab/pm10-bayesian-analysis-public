@@ -1,0 +1,14 @@
+quantity,value
+Study period,2020-01-01 00:00:00 to 2024-12-31 23:00:00
+Temporal resolution,hourly
+"Model-ready observations (n, after lag construction)",42823
+Training set size (final split),34258
+Final held-out test set size,8565
+Rolling-origin CV folds,4
+Excluded DST-ambiguous rows (PM10 source),10
+Excluded DST-ambiguous rows (weather source),0
+PM10 rows removed for missingness (unfillable within 2 h),773
+PM10 missing share (complete hourly grid),0.0176
+Target variable,PM10 concentration [µg/m³]
+Predictor variables (meteorology),"temp, humidity, windspeed, surface_pressure"
+Additional model inputs,"lagged log-PM10 (M0, M3, B1, B2); 2-harmonic annual + daily Fourier terms (M2, M3, B2)"

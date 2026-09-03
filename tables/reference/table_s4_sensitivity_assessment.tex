@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{{Materiality assessment of sensitivity variants relative to M3 baseline. A change is marked material when its absolute relative magnitude is at least 5\%.}\label{tab:s4-assessment}}
+\scriptsize
+\begin{tabularx}{\textwidth}{l l r r r r c}
+\toprule
+Comparison & Quantity & Baseline & Variant & Absolute change & Relative change & Material\\
+\midrule
+Wide prior vs baseline & MAE & 4.869 & 4.870 & 0.002 & 0.0\% & no\\
+Wide prior vs baseline & RMSE & 7.460 & 7.460 & 0.000 & 0.0\% & no\\
+Wide prior vs baseline & CRPS & 3.588 & 3.588 & 0.000 & 0.0\% & no\\
+Student-$t$ vs baseline & MAE & 4.869 & 4.782 & -0.086 & -1.8\% & no\\
+Student-$t$ vs baseline & RMSE & 7.460 & 69.188 & 61.728 & 827.5\% & yes\\
+Student-$t$ vs baseline & CRPS & 3.588 & 3.523 & -0.065 & -1.8\% & no\\
+Student-$t$ vs baseline & Width 90\% & 22.945 & 21.858 & -1.087 & -4.7\% & no\\
+\bottomrule
+\end{tabularx}
+\end{table}

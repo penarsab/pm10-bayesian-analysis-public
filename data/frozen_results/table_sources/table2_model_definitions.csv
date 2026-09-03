@@ -1,0 +1,8 @@
+model,name,family,lagged_pm10,meteorology,cyclic_seasonality,probabilistic_output,implementation,description
+B0,Historical median,Reference,no,no,no,no,src/baselines/median_baseline.py (HistoricalMedianBaseline),Predicts the training-set PM10 median for every hour; no covariates.
+B1,Persistence,Reference,yes,no,no,no,src/baselines/persistence.py (PersistenceBaseline),Predicts PM10 at t with the observed PM10 at t-1; deterministic.
+B2,ARX(1),Reference,yes,yes,yes,yes,src/baselines/arx.py (statsmodels state-space AR(1) with exogenous regressors),"Dynamic regression on log PM10 with AR(1) errors, meteorological and Fourier exogenous regressors; rolling one-step-ahead forecasts (refit=False) with Kalman-filter forecast variance."
+M0,Lag-only Bayesian,Bayesian,yes,no,no,yes,stan/m0_dynamic_only.stan,Lognormal likelihood; linear predictor alpha + phi * lagged log PM10 only.
+M1,Meteorology-only Bayesian,Bayesian,no,yes,no,yes,stan/m1_meteorological.stan,Lognormal likelihood; linear predictor alpha + beta * standardized meteorology.
+M2,Meteorology + cyclic seasonality Bayesian,Bayesian,no,yes,yes,yes,stan/m2_fourier_seasonality.stan,M1 plus 2-harmonic annual and daily Fourier seasonal terms.
+M3,Lag + meteorology + cyclic seasonality Bayesian,Bayesian,yes,yes,yes,yes,stan/m3_dynamic_regression.stan,M2 plus phi * lagged log PM10; the full specification.

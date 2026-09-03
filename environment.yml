@@ -1,0 +1,11 @@
+name: pm10-bayesian-analysis-public
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - matplotlib
+  - pyyaml
+  - statsmodels
+  - pip

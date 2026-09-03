@@ -1,0 +1,16 @@
+\begin{table}[H]
+\centering
+\caption{{Missingness, forward-fill, timestamp-gap, and DST audit for the complete 2020--2024 source grid.}\label{tab:s9-missingness}}
+\small
+\begin{tabularx}{\textwidth}{l r X}
+\toprule
+Audit quantity & Value & Interpretation\\
+\midrule
+Missing $\PM$ values & 773 (1.763\%) & Not interpolated; 251 missing runs, longest 58~h.\\
+Meteorological values forward-filled & 352 per variable & Limited to at most two consecutive hours for each of four weather variables.\\
+Excluded duplicate $\PM$ rows & 10 & Five DST-ambiguous timestamps; four excluded rows exceeded the final-training 90th-percentile threshold.\\
+Processed-series gaps $>1$~h & 251 & Maximum gap 59~h before model-ready filtering.\\
+Model-ready gaps $>1$~h & 249 & Maximum retained-sequence gap 60~h; retained lag values still refer to the preceding grid hour.\\
+\bottomrule
+\end{tabularx}
+\end{table}

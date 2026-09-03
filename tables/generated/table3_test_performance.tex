@@ -1,0 +1,18 @@
+\begin{table}[H]
+\caption{Predictive performance on the final held-out test set ($n=8565$ hours). Lower MAE, RMSE, and CRPS are better. {MAE, RMSE, CRPS, and predictive-interval width are reported in $\pmunit$.} Coverage refers to the nominal 90\% predictive interval. B0 and B1 are deterministic; their CRPS values correspond to point-mass forecasts and they do not provide predictive intervals.\label{tab:test-performance}}
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Model} & \textbf{MAE} & \textbf{RMSE} & \textbf{CRPS} & \textbf{Coverage} & \textbf{Width}\\
+\midrule
+B0 historical median & 13.013 & 20.661 & 13.013 & 0.000 & 0.000\\
+B1 persistence & 4.886 & \textbf{7.320} & 4.886 & 0.008 & 0.000\\
+B2 {ARX(1)} & 4.884 & 7.426 & 3.622 & 0.885 & 23.085\\
+M0 lag only & 4.930 & 7.332 & 3.659 & \textbf{0.889} & 23.894\\
+M1 meteorology & 11.605 & 18.757 & 8.641 & 0.873 & 50.322\\
+M2 + seasonality & 11.376 & 18.627 & 8.450 & 0.872 & 50.282\\
+M3 full & \textbf{4.865} & 7.454 & \textbf{3.602} & 0.884 & \textbf{22.958}\\
+\bottomrule
+\end{tabular}
+\end{table}

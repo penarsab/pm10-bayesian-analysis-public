@@ -1,0 +1,28 @@
+project:
+  name: pm10-bayesian-analysis-public
+  city: Krakow
+  station: Zloty Rog
+
+data:
+  start_date: "2020-01-01 00:00:00"
+  end_date: "2024-12-31 23:00:00"
+  frequency: hourly
+  pm10_station_id: 16786
+  pm10_station_code: MpKrakZloRog-PM10-1g
+  weather_location:
+    latitude: 50.081197
+    longitude: 19.895358
+    timezone: Europe/Warsaw
+  max_forward_fill_steps: 2
+  modelling_file: data/frozen_results/figure_sources/modeling_table.csv
+
+forecast:
+  horizon_steps: 1
+  test_fraction: 0.20
+  initial_train_fraction: 0.60
+  validation_window_fraction: 0.05
+  number_of_validation_folds: 4
+
+seasonality:
+  annual_harmonics: 2
+  daily_harmonics: 2

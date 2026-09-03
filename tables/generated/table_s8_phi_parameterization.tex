@@ -1,0 +1,16 @@
+\begin{table}[H]
+\centering
+\caption{{Sensitivity to sampling $\phi$ through $\tanh(\phi_{\mathrm{raw}})$ or directly. Error scores are final-test values in $\pmunit$; intervals are 90\% posterior intervals.}\label{tab:s8-phi-parameterization}}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrrr}
+\toprule
+Family & Parameterization & $\phi$ median (90\% interval) & MAE & RMSE & CRPS & Coverage 90\% & Width 90\%\\
+\midrule
+M0 & $\tanh(\phi_{\mathrm{raw}})$ & 0.914 [0.910, 0.917] & 4.930 & 7.332 & 3.659 & 0.889 & 23.894\\
+M0 & direct $\phi$ & 0.914 [0.910, 0.918] & 4.931 & 7.333 & 3.659 & 0.889 & 23.906\\
+M3 & $\tanh(\phi_{\mathrm{raw}})$ & 0.865 [0.860, 0.869] & 4.865 & 7.453 & 3.605 & 0.886 & 22.974\\
+M3 & direct $\phi$ & 0.865 [0.860, 0.869] & 4.866 & 7.454 & 3.602 & 0.883 & 22.958\\
+\bottomrule
+\end{tabular}}
+\end{table}

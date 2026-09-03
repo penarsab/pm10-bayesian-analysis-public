@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{{Persistence-safeguard sensitivity on the final held-out test set ($n=8565$). For each Q80/Q90/Q95 rule, the forecast uses persistence when the previous-hour $\PM$ exceeds the listed final-training threshold and otherwise uses M3. High-pollution metrics use the same fixed subset of 636 observations with observed $\PM$ above the final-training Q90 threshold of 54.850~$\pmunit$. MAE and RMSE are reported in $\pmunit$.}}
+\label{tab:s12}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Threshold & Activations & Full MAE & Full RMSE & High MAE & High RMSE \\
+\midrule
+M3 & -- & 0 & 4.865 & 7.454 & 12.990 & 17.298 \\
+Persistence & -- & 0 & 4.886 & 7.320 & 10.435 & 14.609 \\
+Safeguard Q80 & 39.495 & 1466 & 4.780 & 7.191 & 10.418 & 14.519 \\
+Safeguard Q90 & 54.850 & 634 & 4.766 & 7.152 & 10.675 & 14.562 \\
+Safeguard Q95 & 71.851 & 255 & 4.782 & 7.150 & 11.656 & 15.096 \\
+\bottomrule
+\end{tabular}}
+\end{table}

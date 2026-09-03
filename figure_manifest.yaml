@@ -1,0 +1,16 @@
+main:
+  - figures/generated/main/dag.tex
+  - figures/generated/main/figure2_model_dags.pdf
+  - figures/generated/main/figure2_model_dags.png
+  - figures/generated/main/figure1_pm10_series_and_splits.pdf
+  - figures/generated/main/figure3_model_comparison.pdf
+  - figures/generated/main/figure6_loo_pareto_diagnostics.pdf
+  - figures/generated/main/figure4_test_forecast_windows.pdf
+  - figures/generated/main/figure5_coefficient_comparison.pdf
+  - figures/generated/main/figure6_high_pollution_comparison.pdf
+supplementary:
+  - figures/generated/supplementary/s1_prior_predictive_checks.pdf
+  - figures/generated/supplementary/s2_residual_diagnostics.pdf
+  - figures/generated/supplementary/s3_pareto_k_diagnostics.pdf
+  - figures/generated/supplementary/s4_sensitivity_comparison.pdf
+  - figures/generated/supplementary/s5_high_pollution_safeguard.pdf

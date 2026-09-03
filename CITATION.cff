@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the associated article and archived software release."
+title: "PM10 Bayesian Analysis: Public Figure and Table Replication Package"
+type: software
+version: "1.0.0"
+license: MIT
+authors:
+  - family-names: "Baranowski"
+    given-names: "Jerzy"
+repository-code: "https://github.com/penarsab/pm10-bayesian-analysis-public"
+doi: "[ARCHIVED RELEASE DOI]"
+date-released: "2026-09-03"
+preferred-citation:
+  type: article
+  title: "Bayesian Dynamic Regression for One-Hour-Ahead PM10 Forecasting in Krakow"
+  authors:
+    - family-names: "Baranowski"
+      given-names: "Jerzy"
+  doi: "[ARTICLE DOI]"

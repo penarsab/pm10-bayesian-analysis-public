@@ -1,0 +1,22 @@
+\begin{table}[H]
+\caption{Data and split summary.\label{tab:data-summary}}
+\centering
+\small
+\begin{tabularx}{\textwidth}{p{0.42\textwidth}X}
+\toprule
+\textbf{Quantity} & \textbf{Value}\\
+\midrule
+Study period & 1 January 2020--31 December 2024\\
+Temporal resolution & Hourly\\
+Model-ready observations & 42,823\\
+Final training set & 34,258 observations\\
+Final held-out test set & 8565 observations\\
+Rolling-origin validation folds & 4\\
+DST-ambiguous rows excluded & 10 $\PM$ rows; 0 weather rows\\
+$\PM$ rows removed for missingness & 773 (1.76\% of the complete hourly grid)\\
+Target & $\PM$ concentration [$\pmunit$]\\
+Meteorological predictors & Temperature, relative humidity, wind speed, surface pressure; each lagged by 1 h\\
+Additional inputs & Lagged log-$\PM$ (B1, B2, M0, M3); two annual and two daily Fourier harmonics (B2, M2, M3)\\
+\bottomrule
+\end{tabularx}
+\end{table}

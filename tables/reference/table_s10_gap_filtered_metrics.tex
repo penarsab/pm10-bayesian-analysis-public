@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\caption{{Final-test sensitivity after excluding 67 rows in the combined gap, DST, and forward-fill audit windows ($n=8498$ retained). Error scores are in $\pmunit$; $\Delta$ is filtered minus the corresponding full-test value from the same audit calculation.}\label{tab:s10-gap-filtered}}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & MAE filtered & $\Delta$ MAE & RMSE filtered & $\Delta$ RMSE & CRPS filtered & $\Delta$ CRPS\\
+\midrule
+Historical median & 13.009 & -0.004 & 20.683 & 0.022 & 13.009 & -0.004\\
+Persistence & 4.877 & -0.009 & 7.311 & -0.009 & 4.877 & -0.009\\
+ARX(1) & 4.859 & -0.024 & 7.390 & -0.036 & 3.602 & -0.020\\
+M0 & 4.922 & -0.007 & 7.325 & -0.008 & 3.655 & -0.004\\
+M1 & 11.608 & 0.003 & 18.773 & 0.016 & 8.642 & 0.001\\
+M2 & 11.379 & 0.003 & 18.648 & 0.022 & 8.452 & 0.002\\
+M3 & 4.860 & -0.005 & 7.453 & -0.001 & 3.600 & -0.002\\
+\bottomrule
+\end{tabular}}
+\end{table}

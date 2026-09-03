@@ -1,0 +1,5 @@
+predictor,source_column,standardized_column,physical_quantity,unit,sd_unit,final_train_start,final_train_end,final_train_rows,mean,sd,min,median,max,one_sd_interpretation,matches_final_scaler_mean,matches_final_scaler_sd
+Temperature lag 1 h,temp_lag1,temp_z,temperature,deg C,deg C,2020-01-01T01:00:00,2023-12-31T18:00:00,34258,9.88457294646506,8.549248926834345,-17.5,9.6,34.2,1 SD temperature = 8.549 deg C,True,True
+Relative humidity lag 1 h,humidity_lag1,humidity_z,relative humidity,%,percentage points,2020-01-01T01:00:00,2023-12-31T18:00:00,34258,75.40694144433417,16.417055108784744,13.0,79.0,100.0,1 SD relative humidity = 16.417 percentage points,True,True
+Wind speed lag 1 h,windspeed_lag1,wind_speed_z,wind speed,km/h,km/h,2020-01-01T01:00:00,2023-12-31T18:00:00,34258,11.598817794383793,6.593059776406447,0.0,10.2,53.3,1 SD wind speed = 6.593 km/h,True,True
+Surface pressure lag 1 h,pressure_lag1,pressure_z,surface pressure,hPa,hPa,2020-01-01T01:00:00,2023-12-31T18:00:00,34258,990.1717613404169,8.31840480751421,958.4,990.6,1018.2,1 SD surface pressure = 8.318 hPa,True,True

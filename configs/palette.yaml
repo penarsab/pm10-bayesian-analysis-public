@@ -1,0 +1,54 @@
+schema_version: 1
+
+defaults:
+  sequential_palette: blue_ribbon_v1
+  uncertainty_palette: blue_ribbon_v1
+  neutral_palette: neutral_v1
+  background: light
+
+palettes:
+  blue_ribbon_v1:
+    type: sequential
+    status: stable
+    background_assumption: light
+    colors:
+      light: "#B3FFFF"
+      light_highlight: "#9AF6FF"
+      mid: "#67C3FF"
+      mid_highlight: "#3490CC"
+      dark: "#015D99"
+      dark_highlight: "#002A66"
+    semantic_roles:
+      outer_interval_fill: light
+      intermediate_interval_fill: light_highlight
+      inner_interval_fill: mid
+      contextual_fill: light_highlight
+      contextual_line: mid_highlight
+      secondary_line: mid_highlight
+      primary_line: dark
+      primary_emphasis: dark_highlight
+      marker_edge: dark
+      direct_label: dark_highlight
+
+  neutral_v1:
+    type: neutral
+    status: stable
+    background_assumption: light
+    colors:
+      white: "#FFFFFF"
+      near_white: "#F5F5F5"
+      light: "#D9D9D9"
+      mid: "#8C8C8C"
+      dark: "#4D4D4D"
+      near_black: "#1A1A1A"
+      black: "#000000"
+    semantic_roles:
+      figure_background: white
+      subtle_background: near_white
+      subtle_grid: light
+      contextual_line: mid
+      reference_line: mid
+      axes_and_spines: dark
+      general_text: near_black
+      marker_edge: near_black
+      strong_outline: black

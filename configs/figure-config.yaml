@@ -1,0 +1,68 @@
+schema_version: 1
+rendering:
+  png_dpi: 300
+  formats: [pdf, png]
+  backend: Agg
+figures:
+  figure1_pm10_series_and_splits:
+    width_in: 7.0
+    height_in: 4.6
+    panel_count: 2
+    style: publication.mplstyle
+  figure2_model_dags:
+    source: src/figures/publication/model_dag.py
+    outputs:
+      - figures/generated/main/dag.tex
+      - figures/generated/main/figure2_model_dags.pdf
+      - figures/generated/main/figure2_model_dags.png
+    reference_rendering: figures/reference/main/figure2_model_dags.pdf
+  figure3_model_comparison:
+    width_in: 7.0
+    height_in: 5.6
+    panel_count: 4
+    style: publication.mplstyle
+  figure4_test_forecast_windows:
+    width_in: 8.2
+    height_in: 7.2
+    panel_count: 3
+    style: publication.mplstyle
+  figure5_coefficient_comparison:
+    width_in: 7.0
+    height_in: 3.2
+    panel_count: 1
+    style: publication.mplstyle
+  figure6_loo_pareto_diagnostics:
+    width_in: 7.0
+    height_in: 2.8
+    panel_count: 2
+    style: publication.mplstyle
+  figure6_high_pollution_comparison:
+    width_in: 7.0
+    height_in: 2.6
+    panel_count: 2
+    style: publication.mplstyle
+  s1_prior_predictive_checks:
+    width_in: 7.0
+    height_in: 2.8
+    panel_count: 2
+    style: publication.mplstyle
+  s2_residual_diagnostics:
+    width_in: 7.0
+    height_in: 2.9
+    panel_count: 2
+    style: publication.mplstyle
+  s3_pareto_k_diagnostics:
+    width_in: 7.0
+    height_in: 2.8
+    panel_count: 2
+    style: publication.mplstyle
+  s4_sensitivity_comparison:
+    width_in: 7.0
+    height_in: 3.4
+    panel_count: 4
+    style: publication.mplstyle
+  s5_high_pollution_safeguard:
+    width_in: 10.8
+    height_in: 5.9
+    panel_count: 5
+    style: publication.mplstyle

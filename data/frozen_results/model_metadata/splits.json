@@ -1,0 +1,73 @@
+{
+  "n_rows": 42823,
+  "datetime_start": "2020-01-01T01:00:00",
+  "datetime_end": "2024-12-31T23:00:00",
+  "rule": "Chronological split: rolling-origin validation from 0.60 to 0.80 and final test fraction 0.20.",
+  "cv": [
+    {
+      "name": "fold_1",
+      "train_start_idx": 0,
+      "train_end_idx": 25692,
+      "prediction_start_idx": 25693,
+      "prediction_end_idx": 27833,
+      "train_start": "2020-01-01T01:00:00",
+      "train_end": "2022-12-25T18:00:00",
+      "prediction_start": "2022-12-25T19:00:00",
+      "prediction_end": "2023-03-27T05:00:00",
+      "train_rows": 25693,
+      "prediction_rows": 2141
+    },
+    {
+      "name": "fold_2",
+      "train_start_idx": 0,
+      "train_end_idx": 27833,
+      "prediction_start_idx": 27834,
+      "prediction_end_idx": 29975,
+      "train_start": "2020-01-01T01:00:00",
+      "train_end": "2023-03-27T05:00:00",
+      "prediction_start": "2023-03-27T06:00:00",
+      "prediction_end": "2023-06-28T18:00:00",
+      "train_rows": 27834,
+      "prediction_rows": 2142
+    },
+    {
+      "name": "fold_3",
+      "train_start_idx": 0,
+      "train_end_idx": 29975,
+      "prediction_start_idx": 29976,
+      "prediction_end_idx": 32116,
+      "train_start": "2020-01-01T01:00:00",
+      "train_end": "2023-06-28T18:00:00",
+      "prediction_start": "2023-06-28T19:00:00",
+      "prediction_end": "2023-09-28T22:00:00",
+      "train_rows": 29976,
+      "prediction_rows": 2141
+    },
+    {
+      "name": "fold_4",
+      "train_start_idx": 0,
+      "train_end_idx": 32116,
+      "prediction_start_idx": 32117,
+      "prediction_end_idx": 34257,
+      "train_start": "2020-01-01T01:00:00",
+      "train_end": "2023-09-28T22:00:00",
+      "prediction_start": "2023-09-28T23:00:00",
+      "prediction_end": "2023-12-31T18:00:00",
+      "train_rows": 32117,
+      "prediction_rows": 2141
+    }
+  ],
+  "test": {
+    "name": "test",
+    "train_start_idx": 0,
+    "train_end_idx": 34257,
+    "prediction_start_idx": 34258,
+    "prediction_end_idx": 42822,
+    "train_start": "2020-01-01T01:00:00",
+    "train_end": "2023-12-31T18:00:00",
+    "prediction_start": "2023-12-31T19:00:00",
+    "prediction_end": "2024-12-31T23:00:00",
+    "train_rows": 34258,
+    "prediction_rows": 8565
+  }
+}

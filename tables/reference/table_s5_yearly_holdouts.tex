@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{{Sequential yearly hold-out performance. Each year was evaluated after fitting on all preceding years. Error scores are in $\pmunit$; coverage refers to the nominal 90\% predictive interval. High-pollution subsets use the training-period 90th percentile for the corresponding split. Values are rounded to three decimals.}\label{tab:s5-yearly-holdouts}}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrr}
+\toprule
+Year & Model & $n$ & MAE & RMSE & CRPS & Coverage & High MAE & High RMSE\\
+\midrule
+2021 & Persistence & 8590 & 5.357 & 8.645 & 5.357 & 0.000 & 9.833 & 16.324\\
+2021 & ARX(1) & 8590 & 5.380 & 8.347 & 3.956 & 0.906 & 12.172 & 16.611\\
+2021 & M0 & 8590 & 5.545 & 8.571 & 4.085 & 0.908 & 12.498 & 16.795\\
+2021 & M3 & 8590 & 5.308 & 8.209 & 3.904 & 0.908 & 11.975 & 16.241\\
+2022 & Persistence & 8556 & 4.618 & 6.785 & 4.618 & 0.000 & 9.016 & 12.697\\
+2022 & ARX(1) & 8556 & 4.504 & 6.432 & 3.352 & 0.923 & 10.921 & 12.742\\
+2022 & M0 & 8556 & 4.651 & 6.711 & 3.469 & 0.925 & 11.393 & 13.357\\
+2022 & M3 & 8556 & 4.450 & 6.404 & 3.322 & 0.926 & 10.623 & 12.498\\
+2023 & Persistence & 8421 & 4.342 & 6.217 & 4.342 & 0.001 & 8.585 & 11.621\\
+2023 & ARX(1) & 8421 & 4.194 & 5.908 & 3.105 & 0.889 & 10.785 & 12.134\\
+2023 & M0 & 8421 & 4.365 & 6.195 & 3.221 & 0.889 & 11.689 & 12.734\\
+2023 & M3 & 8421 & 4.145 & 5.881 & 3.079 & 0.890 & 10.304 & 11.939\\
+2024 & Persistence & 8560 & 4.886 & 7.321 & 4.886 & 0.008 & 10.435 & 14.609\\
+2024 & ARX(1) & 8560 & 4.884 & 7.428 & 3.619 & 0.885 & 13.201 & 17.208\\
+2024 & M0 & 8560 & 4.930 & 7.327 & 3.650 & 0.888 & 12.694 & 15.699\\
+2024 & M3 & 8560 & 4.871 & 7.456 & 3.603 & 0.885 & 13.002 & 17.305\\
+\bottomrule
+\end{tabular}}
+\end{table}

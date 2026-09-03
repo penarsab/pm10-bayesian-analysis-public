@@ -1,0 +1,146 @@
+\begin{tikzpicture}[
+    font=\small,
+    >=Latex,
+    line cap=round,
+    line join=round,
+    active/.style={
+        rectangle,
+        rounded corners=2pt,
+        draw=blue!60!black,
+        line width=0.9pt,
+        fill=blue!2,
+        minimum width=28mm,
+        minimum height=10mm,
+        align=center,
+        inner sep=2pt
+    },
+    inactive/.style={
+        rectangle,
+        rounded corners=2pt,
+        draw=gray!45,
+        line width=0.8pt,
+        fill=gray!6,
+        text=gray!65,
+        minimum width=28mm,
+        minimum height=10mm,
+        align=center,
+        inner sep=2pt
+    },
+    middlebox/.style={
+        rectangle,
+        rounded corners=2pt,
+        draw=blue!60!black,
+        line width=0.9pt,
+        fill=blue!2,
+        minimum width=27mm,
+        minimum height=10mm,
+        align=center,
+        inner sep=2pt
+    },
+    outbox/.style={
+        rectangle,
+        rounded corners=2pt,
+        draw=blue!60!black,
+        line width=0.9pt,
+        fill=blue!2,
+        minimum width=26mm,
+        minimum height=10mm,
+        align=center,
+        inner sep=2pt
+    },
+    arr/.style={
+        ->,
+        draw=blue!60!black,
+        line width=0.9pt
+    },
+    ghostarr/.style={
+        ->,
+        draw=gray!45,
+        dashed,
+        line width=0.8pt
+    }
+]
+
+% ---------- helper macro ----------
+% #1 x origin
+% #2 y origin
+% #3 model label
+% #4 subtitle
+% #5 lag active 1/0
+% #6 met active 1/0
+% #7 season active 1/0
+% #8 note
+\newcommand{\modelpanel}[8]{%
+    % title
+    \node[anchor=west,font=\bfseries\large] at (#1,#2) {#3};
+    \node[anchor=west,font=\large] at ($(#1,#2)+(0.9,0)$) {#4};
+
+    % left column
+    \ifnum#5=1
+        \node[active] (lag#3) at ($(#1,#2)+(0,-1.25)$)
+        {Lagged PM$_{10}$\\[-1mm] $z_{t-1}^{c}$};
+    \else
+        \node[inactive] (lag#3) at ($(#1,#2)+(0,-1.25)$)
+        {Lagged PM$_{10}$\\[-1mm] $z_{t-1}^{c}$};
+    \fi
+
+    \ifnum#6=1
+        \node[active] (met#3) at ($(#1,#2)+(0,-2.40)$)
+        {Meteorology\\[-1mm] $\mathbf{x}_{t-1}^{*}$};
+    \else
+        \node[inactive] (met#3) at ($(#1,#2)+(0,-2.40)$)
+        {Meteorology\\[-1mm] $\mathbf{x}_{t-1}^{*}$};
+    \fi
+
+    \ifnum#7=1
+        \node[active] (sea#3) at ($(#1,#2)+(0,-3.55)$)
+        {Fourier terms\\[-1mm] $f_{\mathrm{year}}(t),\,f_{\mathrm{day}}(t)$};
+    \else
+        \node[inactive] (sea#3) at ($(#1,#2)+(0,-3.55)$)
+        {Fourier terms\\[-1mm] $f_{\mathrm{year}}(t),\,f_{\mathrm{day}}(t)$};
+    \fi
+
+    % middle and output nodes
+    \node[middlebox] (eta#3) at ($(#1,#2)+(3.65,-2.40)$)
+    {Linear predictor\\[-1mm] $\eta_t$};
+
+    \node[outbox] (y#3) at ($(#1,#2)+(6.85,-2.40)$)
+    {PM$_{10}$ outcome\\[-1mm] $y_t$};
+
+    % arrows from inputs
+    \ifnum#5=1
+        \draw[arr] (lag#3.east) -- (eta#3.west);
+    \else
+        \draw[ghostarr] (lag#3.east) -- (eta#3.west);
+    \fi
+
+    \ifnum#6=1
+        \draw[arr] (met#3.east) -- (eta#3.west);
+    \else
+        \draw[ghostarr] (met#3.east) -- (eta#3.west);
+    \fi
+
+    \ifnum#7=1
+        \draw[arr] (sea#3.east) -- (eta#3.west);
+    \else
+        \draw[ghostarr] (sea#3.east) -- (eta#3.west);
+    \fi
+
+    \draw[arr] (eta#3.east) -- (y#3.west);
+
+    % panel note
+    \node[align=center,text=gray!75!black,font=\large] at ($(#1,#2)+(3.45,-4.65)$) {#8};
+}
+
+% ---------- panels ----------
+\modelpanel{0}{0}{M0}{Lag-only Bayesian model}{1}{0}{0}{Tests persistence alone}
+\modelpanel{9.8}{0}{M1}{Meteorology-only Bayesian model}{0}{1}{0}{No lag information}
+\modelpanel{0}{-5.9}{M2}{Meteorology + cyclic seasonality}{0}{1}{1}{Adds daily and annual cycles}
+\modelpanel{9.8}{-5.9}{M3}{Final model: lag + meteorology + seasonality}{1}{1}{1}{Full predictive structure}
+
+% ---- separator lines ----
+\draw[dashed, gray!50, line width=0.8pt] (8.25,1) -- (8.25,-11);
+\draw[dashed, gray!50, line width=0.8pt] (-2,-5.3) -- (19.4,-5.3);
+
+\end{tikzpicture}%
+

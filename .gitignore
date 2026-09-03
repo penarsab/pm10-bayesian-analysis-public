@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+tmp/
+
+# Local fitting/intermediate artefacts are intentionally excluded from the public package.
+results/
+*.nc
+stan_output*/
+
+# Local/editor files.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

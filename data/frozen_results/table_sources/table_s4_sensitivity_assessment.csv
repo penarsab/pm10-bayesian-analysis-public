@@ -1,0 +1,17 @@
+comparison,quantity,baseline_value,variant_value,absolute_change,relative_change,material_change,rule
+M3_wide_priors vs M3_baseline,mae,4.868683975843471,4.870469814270756,0.0017858384272848582,0.0003668010567425404,False,absolute relative change >= 5%
+M3_wide_priors vs M3_baseline,rmse,7.45998807853183,7.460235611038096,0.0002475325062656353,3.318135413352445e-05,False,absolute relative change >= 5%
+M3_wide_priors vs M3_baseline,crps,3.5879601637434186,3.5879971833094215,3.70195660028827e-05,1.0317719348438683e-05,False,absolute relative change >= 5%
+M3_wide_priors vs M3_baseline,width_90,22.944866274780523,22.94677412433358,0.001907849553056451,8.314929929024833e-05,False,absolute relative change >= 5%
+M3_dynamic_student_t vs M3_baseline,mae,4.868683975843471,4.7821971165871435,-0.08648685925632726,-0.017763909032798526,False,absolute relative change >= 5%
+M3_dynamic_student_t vs M3_baseline,rmse,7.45998807853183,69.1876933441476,61.727705265615775,8.274504545557418,True,absolute relative change >= 5%
+M3_dynamic_student_t vs M3_baseline,crps,3.5879601637434186,3.5230660531448477,-0.06489411059857098,-0.018086630741982693,False,absolute relative change >= 5%
+M3_dynamic_student_t vs M3_baseline,width_90,22.944866274780523,21.85798672577386,-1.0868795490066638,-0.04736918210768959,False,absolute relative change >= 5%
+M3_wide_priors vs M3_baseline,beta.1_interval_width_90,0.011242557649999997,0.0107861771,-0.0004563805499999962,-0.040594014654663245,False,absolute relative change >= 5%
+M3_wide_priors vs M3_baseline,beta.2_interval_width_90,0.006216134999999999,0.006515924359999998,0.0002997893599999985,0.0482276141042623,False,absolute relative change >= 5%
+M3_wide_priors vs M3_baseline,beta.3_interval_width_90,0.005595869699999999,0.005455175049999997,-0.00014069465000000198,-0.025142588648910464,False,absolute relative change >= 5%
+M3_wide_priors vs M3_baseline,beta.4_interval_width_90,0.0048637090000000025,0.00510017825,0.0002364692499999977,0.04861911968828678,False,absolute relative change >= 5%
+M3_dynamic_student_t vs M3_baseline,beta.1_interval_width_90,0.011242557649999997,0.0095864426,-0.0016561150499999969,-0.14730767691460292,True,absolute relative change >= 5%
+M3_dynamic_student_t vs M3_baseline,beta.2_interval_width_90,0.006216134999999999,0.006005679959999999,-0.00021045504000000072,-0.03385625312191591,False,absolute relative change >= 5%
+M3_dynamic_student_t vs M3_baseline,beta.3_interval_width_90,0.005595869699999999,0.005200985600000006,-0.0003948840999999925,-0.07056706484784529,True,absolute relative change >= 5%
+M3_dynamic_student_t vs M3_baseline,beta.4_interval_width_90,0.0048637090000000025,0.0044875690499999975,-0.00037613995000000504,-0.07733603100021091,True,absolute relative change >= 5%

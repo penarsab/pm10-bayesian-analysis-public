@@ -1,0 +1,22 @@
+\begin{table}[H]
+\caption{Paired moving-block bootstrap comparison on the final test set (24 h blocks, 2000 replications). A negative difference favors the first model. {Differences for MAE, RMSE, and CRPS are reported in $\pmunit$.}\label{tab:bootstrap-comparisons}}
+\centering
+\scriptsize
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Comparison} & \textbf{Metric} & \textbf{Observed $\Delta$} & \textbf{Bootstrap median} & \textbf{95\% interval} & \textbf{$P(\Delta<0)$}\\
+\midrule
+M3 vs B1 & MAE & -0.021 & -0.027 & [-0.141, 0.123] & 0.641\\
+M3 vs B1 & RMSE & 0.134 & 0.124 & [-0.255, 0.649] & 0.306\\
+M0 vs B1 & MAE & 0.044 & 0.043 & [-0.021, 0.134] & 0.107\\
+M0 vs B1 & RMSE & 0.013 & 0.007 & [-0.113, 0.188] & 0.460\\
+M3 vs M0 & CRPS & -0.057 & -0.058 & [-0.117, 0.014] & 0.942\\
+M3 vs M0 & MAE & -0.064 & -0.065 & [-0.156, 0.047] & 0.894\\
+M3 vs M0 & RMSE & 0.121 & 0.092 & [-0.216, 0.549] & 0.319\\
+M3 vs {ARX(1)} & CRPS & -0.020 & -0.020 & [-0.045, 0.008] & 0.926\\
+M3 vs {ARX(1)} & MAE & -0.019 & -0.018 & [-0.056, 0.024] & 0.794\\
+M3 vs {ARX(1)} & RMSE & 0.028 & 0.025 & [-0.068, 0.146] & 0.320\\
+M0 vs {ARX(1)} & CRPS & 0.037 & 0.038 & [-0.022, 0.086] & 0.090\\
+\bottomrule
+\end{tabular}
+\end{table}

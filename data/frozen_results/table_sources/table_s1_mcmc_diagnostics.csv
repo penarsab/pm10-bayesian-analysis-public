@@ -1,0 +1,5 @@
+Model,Chains,Warmup iters/chain,Sampling iters/chain,Max R-hat,Min bulk ESS,Min tail ESS,Divergences,Max-treedepth hits,Min E-BFMI,Flagged problematic
+M0_dynamic_only,4,1000,1000,1.0,2103.0,2421.0,0,0,0.8682358045685312,False
+M1_meteorological,4,1000,1000,1.0,4451.0,2684.0,0,0,0.9738316042306016,False
+M2_fourier_seasonality,4,1000,1000,1.0,2169.0,2517.0,0,0,1.0289195159785975,False
+M3_dynamic_regression,4,1000,1000,1.0,1671.0,2250.0,0,0,1.0106058410023868,False

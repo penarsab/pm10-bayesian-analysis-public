@@ -1,0 +1,38 @@
+{
+  "fold_name": "final_holdout",
+  "train_fraction": 0.8,
+  "test_fraction": 0.2,
+  "train_start": "2020-01-01T01:00:00",
+  "train_end": "2023-12-31T18:00:00",
+  "test_start": "2023-12-31T19:00:00",
+  "test_end": "2024-12-31T23:00:00",
+  "train_rows": 34258,
+  "test_rows": 8565,
+  "note": "Means and standard deviations are computed only on the final training split (the first train_fraction of rows, chronologically); the identical parameters are applied to the final test split. This is the single scaler used by every final-fit model and by final posterior prediction.",
+  "variables": {
+    "temp_lag1": {
+      "mean": 9.88457294646506,
+      "std": 8.549248926834345,
+      "standardized_column": "temp_z"
+    },
+    "humidity_lag1": {
+      "mean": 75.40694144433417,
+      "std": 16.417055108784744,
+      "standardized_column": "humidity_z"
+    },
+    "windspeed_lag1": {
+      "mean": 11.598817794383793,
+      "std": 6.593059776406447,
+      "standardized_column": "wind_speed_z"
+    },
+    "pressure_lag1": {
+      "mean": 990.1717613404169,
+      "std": 8.31840480751421,
+      "standardized_column": "pressure_z"
+    },
+    "log_pm10_prev": {
+      "center_mean_z_train": 3.1190195157695952,
+      "centered_column": "log_pm10_prev_centered"
+    }
+  }
+}

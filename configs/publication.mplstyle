@@ -1,0 +1,14 @@
+font.family: sans-serif
+font.sans-serif: DejaVu Sans, Arial, Helvetica
+font.size: 8.5
+axes.labelsize: 9
+axes.titlesize: 9
+xtick.labelsize: 8
+ytick.labelsize: 8
+legend.fontsize: 8
+axes.grid: False
+axes.spines.top: False
+axes.spines.right: False
+pdf.fonttype: 42
+ps.fonttype: 42
+axes.unicode_minus: True

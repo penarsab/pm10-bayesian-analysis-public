@@ -1,0 +1,53 @@
+schema_version: 1
+
+defaults:
+  background: light
+  transparent: false
+  final_overwrite: true
+  pad_inches: 0.05
+
+profiles:
+  publication-single-column:
+    profile: publication
+    style_asset: publication.mplstyle
+    layout_class: single-column
+    layout_strategy: constrained
+    dimensions:
+      width_in: 3.5
+      height_in: 2.6
+    formats: [pdf, png]
+    png:
+      dpi: 300
+    pdf:
+      fonttype: 42
+      transparent: false
+
+  publication-double-column:
+    profile: publication
+    style_asset: publication.mplstyle
+    layout_class: double-column
+    layout_strategy: constrained
+    dimensions:
+      width_in: 7.0
+      height_in: 4.2
+    formats: [pdf, png]
+    png:
+      dpi: 300
+    pdf:
+      fonttype: 42
+      transparent: false
+
+  publication-full-page:
+    profile: publication
+    style_asset: publication.mplstyle
+    layout_class: full-page
+    layout_strategy: constrained
+    dimensions:
+      width_in: 7.0
+      height_in: 8.5
+    formats: [pdf, png]
+    png:
+      dpi: 300
+    pdf:
+      fonttype: 42
+      transparent: false

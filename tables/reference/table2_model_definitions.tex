@@ -1,0 +1,18 @@
+\begin{table}[H]
+\caption{Definitions of the reference and Bayesian models.\label{tab:model-definitions}}
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{l l c c c c X}
+\toprule
+\textbf{ID} & \textbf{Model} & \textbf{Lag} & \textbf{Met.} & \textbf{Cyclic} & \textbf{Prob.} & \textbf{Definition}\\
+\midrule
+B0 & Historical median & -- & -- & -- & -- & Training-set median used for every hour.\\
+B1 & Persistence & yes & -- & -- & -- & $\widehat y_t=y_{t-1}$.\\
+B2 & {ARX(1)} & yes & yes & yes & yes & {Dynamic regression on log-$\PM$ with AR(1) errors; rolling one-step Kalman forecasts.}\\
+M0 & Lag-only Bayesian & yes & -- & -- & yes & Lognormal model with centered lagged log-$\PM$.\\
+M1 & Meteorology-only Bayesian & -- & yes & -- & yes & Lognormal regression with standardized lagged meteorology.\\
+M2 & Meteorology + seasonality & -- & yes & yes & yes & M1 plus annual and daily Fourier terms.\\
+M3 & Full Bayesian model & yes & yes & yes & yes & M2 plus centered lagged log-$\PM$.\\
+\bottomrule
+\end{tabularx}
+\end{table}

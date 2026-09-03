@@ -1,0 +1,20 @@
+main:
+  - tables/generated/table1_data_summary.tex
+  - tables/generated/table2_model_definitions.tex
+  - tables/generated/table3_test_performance.tex
+  - tables/generated/table4_bootstrap_comparisons.tex
+  - tables/generated/table5_meteorological_effects.tex
+supplementary:
+  - tables/generated/table_s1_mcmc_diagnostics.tex
+  - tables/generated/table_s2_loo_waic.tex
+  - tables/generated/table_s3_sensitivity.tex
+  - tables/generated/table_s4_sensitivity_assessment.tex
+  - tables/generated/table_s5_yearly_holdouts.tex
+  - tables/generated/table_s6_fourier_sensitivity.tex
+  - tables/generated/table_s7_phi_diagnostics.tex
+  - tables/generated/table_s8_phi_parameterization.tex
+  - tables/generated/table_s9_missingness_audit.tex
+  - tables/generated/table_s10_gap_filtered_metrics.tex
+  - tables/generated/table_s11_meteorological_scale.tex
+  - tables/generated/table_s12_high_pollution_safeguard.tex
+

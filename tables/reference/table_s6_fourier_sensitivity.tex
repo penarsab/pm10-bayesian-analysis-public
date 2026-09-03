@@ -1,0 +1,15 @@
+\begin{table}[H]
+\centering
+\caption{{M3 sensitivity to the number of annual and daily Fourier harmonics. Test-set error scores are in $\pmunit$. PSIS-LOO was calculated on the final training set. Values are rounded to three decimals, except elpd.}\label{tab:s6-fourier}}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Order & MAE & RMSE & CRPS & Coverage 90\% & Width 90\% & elpd$_{\mathrm{loo}}$ & Max $\widehat R$ & Divergences & Tree-depth hits\\
+\midrule
+$K=1$ & 4.928 & 7.505 & 3.646 & 0.885 & 23.285 & -110322.9 & 1.000 & 0 & 0\\
+$K=2$ & 4.873 & 7.448 & 3.607 & 0.883 & 22.966 & -109852.2 & 1.000 & 0 & 0\\
+$K=3$ & 4.868 & 7.457 & 3.604 & 0.885 & 22.970 & -109826.1 & 1.000 & 0 & 0\\
+\bottomrule
+\end{tabular}}
+\end{table}
