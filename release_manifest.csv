@@ -97,7 +97,7 @@ release_manifest.csv,9288
 requirements.txt,43
 scripts/generate_all_figures.py,2922
 scripts/generate_all_tables.py,2612
-scripts/validate_release.py,6688
+scripts/validate_release.py,7005
 src/config.py,1066
 src/figures/__init__.py,0
 src/figures/publication/__init__.py,0
@@ -114,7 +114,6 @@ src/figures/publication/supplementary/s2_residual_diagnostics.py,3462
 src/figures/publication/supplementary/s3_pareto_k_diagnostics.py,3482
 src/figures/publication/supplementary/s4_sensitivity_comparison.py,5882
 src/figures/publication/supplementary/s5_high_pollution_safeguard.py,16615
-src/figures/tmp/matplotlib/fontlist-v3.11.0.json,140567
 table_manifest.yaml,905
 tables/generated/table1_data_summary.tex,911
 tables/generated/table2_model_definitions.tex,1050
@@ -167,5 +166,3 @@ tables/reference/table_s6_fourier_sensitivity.tex,775
 tables/reference/table_s7_phi_diagnostics.tex,582
 tables/reference/table_s8_phi_parameterization.tex,863
 tables/reference/table_s9_missingness_audit.tex,909
-tmp/bar_test_conda_run.png,12030
-tmp/matplotlib/fontlist-v3.11.0.json,140567

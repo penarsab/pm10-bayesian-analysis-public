@@ -107,6 +107,17 @@ PROHIBITED_FILENAMES = {
     "lista_zadan.md",
 }
 
+MANIFEST_EXCLUDED_PARTS = {
+    ".git",
+    "__pycache__",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".ipynb_checkpoints",
+    ".venv",
+    "tmp",
+}
+
 
 def _missing(paths: list[str]) -> list[str]:
     return [path for path in paths if not (ROOT / path).exists()]
@@ -140,9 +151,14 @@ def _machine_paths() -> list[str]:
     return _table_paths("tables/machine_readable", ".csv")
 
 
+def _include_in_manifest(path: Path) -> bool:
+    rel_parts = path.relative_to(ROOT).parts
+    return path.is_file() and not set(rel_parts).intersection(MANIFEST_EXCLUDED_PARTS)
+
+
 def _write_manifest() -> None:
     rows = []
-    for path in sorted(p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts):
+    for path in sorted(p for p in ROOT.rglob("*") if _include_in_manifest(p)):
         rel = path.relative_to(ROOT).as_posix()
         rows.append({"path": rel, "size_bytes": path.stat().st_size})
     with (ROOT / "release_manifest.csv").open("w", newline="", encoding="utf-8") as handle:
