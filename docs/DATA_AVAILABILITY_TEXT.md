@@ -17,7 +17,7 @@ https://github.com/penarsab/pm10-bayesian-analysis-public
 The archived release is available at:
 
 ```text
-https://doi.org/10.5281/zenodo.22287111
+https://doi.org/10.5281/zenodo.22287488
 ```
 
 The package does not redistribute the original raw working `data/raw` and

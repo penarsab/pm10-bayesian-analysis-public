@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this replication package, please cite the associated article and archived software release."
 title: "PM10 Bayesian Analysis: Public Figure and Table Replication Package"
 type: software
-version: "1.0.0"
+version: "1.0.1"
 license: MIT
 authors:
   - family-names: "Penar"
@@ -10,7 +10,7 @@ authors:
   - family-names: "Baranowski"
     given-names: "Jerzy"
 repository-code: "https://github.com/penarsab/pm10-bayesian-analysis-public"
-doi: "10.5281/zenodo.22287111"
+doi: "10.5281/zenodo.22287488"
 date-released: "2026-09-03"
 preferred-citation:
   type: article

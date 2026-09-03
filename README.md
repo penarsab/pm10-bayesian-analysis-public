@@ -3,7 +3,7 @@
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3110/)
 [![License: MIT](https://img.shields.io/badge/Code%20license-MIT-yellow.svg)](LICENSE)
 [![Content: CC BY 4.0](https://img.shields.io/badge/Content%20license-CC%20BY%204.0-lightgrey.svg)](LICENSE-CONTENT.md)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22287111.svg)](https://doi.org/10.5281/zenodo.22287111)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22287488.svg)](https://doi.org/10.5281/zenodo.22287488)
 
 [![Preprint](https://img.shields.io/badge/Preprint-Preprints.org-blue.svg)](https://www.preprints.org/manuscript/202607.1392)
 
@@ -132,7 +132,7 @@ Meteorological and Seasonal Factors*, Preprints.org,
 https://www.preprints.org/manuscript/202607.1392.
 
 Machine-readable citation metadata are provided in `CITATION.cff`. The archived
-release DOI is `10.5281/zenodo.22287111`.
+release DOI is `10.5281/zenodo.22287488`.
 
 ## Licence and contact
 
