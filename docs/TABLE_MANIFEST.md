@@ -2,11 +2,12 @@
 
 The public package includes 5 main manuscript tables and 12 supplementary
 manuscript tables. Reference LaTeX files are stored in `tables/reference/`.
-Regenerated LaTeX files are written to `tables/generated/`, and corresponding
-machine-readable CSV files are written to `tables/machine_readable/`.
+Regenerated LaTeX files are built from frozen CSV sources and written to
+`tables/generated/`; corresponding machine-readable CSV files are written to
+`tables/machine_readable/`.
 
-All generated LaTeX table files currently match the corresponding reference
-table files byte-for-byte.
+All generated LaTeX table files are validated against the corresponding
+reference table files.
 
 | Table | Class | Source CSV | Output |
 |---|---|---|---|

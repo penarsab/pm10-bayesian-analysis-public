@@ -136,6 +136,8 @@ def _prohibited_files() -> list[str]:
             continue
         rel = path.relative_to(ROOT).as_posix()
         parts = set(rel.split("/"))
+        if parts.intersection(MANIFEST_EXCLUDED_PARTS):
+            continue
         if path.name in PROHIBITED_FILENAMES:
             offenders.append(rel)
         if path.suffix == ".nc":
@@ -149,6 +151,16 @@ def _prohibited_files() -> list[str]:
 
 def _machine_paths() -> list[str]:
     return _table_paths("tables/machine_readable", ".csv")
+
+
+def _table_mismatches() -> list[str]:
+    mismatches = []
+    for stem in TABLE_STEMS:
+        reference = ROOT / "tables" / "reference" / f"{stem}.tex"
+        generated = ROOT / "tables" / "generated" / f"{stem}.tex"
+        if reference.exists() and generated.exists() and reference.read_text(encoding="utf-8") != generated.read_text(encoding="utf-8"):
+            mismatches.append(f"tables/generated/{stem}.tex")
+    return mismatches
 
 
 def _include_in_manifest(path: Path) -> bool:
@@ -176,6 +188,7 @@ def validate_release() -> dict[str, object]:
         "missing_machine_readable_tables": _missing(_machine_paths()),
         "missing_sources": _missing(REQUIRED_SOURCES),
         "prohibited_files": _prohibited_files(),
+        "table_mismatches": _table_mismatches(),
     }
     status = "passed" if all(not value for value in checks.values()) else "failed"
     _write_manifest()

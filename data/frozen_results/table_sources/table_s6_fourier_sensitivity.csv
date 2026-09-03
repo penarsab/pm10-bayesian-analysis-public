@@ -1,4 +1,4 @@
-variant,fourier_harmonics,n_train,n_test,mae,rmse,crps,coverage_90,width_90,note
-K=1,1,34258,8565,4.928176026605014,7.504757350315814,3.6457089104441494,0.8849970811441915,23.28477778514257,Final hold-out test metrics for M3 with the specified annual and daily Fourier harmonic count.
-K=2,2,34258,8565,4.873002817993166,7.4477192691839935,3.6071888964025454,0.8830122591943957,22.965738041371203,Final hold-out test metrics for M3 with the specified annual and daily Fourier harmonic count.
-K=3,3,34258,8565,4.86772703583028,7.457425593917368,3.604178942852141,0.8851138353765324,22.970455888750514,Final hold-out test metrics for M3 with the specified annual and daily Fourier harmonic count.
+variant,fourier_harmonics,n_train,n_test,mae,rmse,crps,coverage_90,width_90,elpd_loo,max_rhat,divergences,max_treedepth_hits,note
+K=1,1,34258,8565,4.928176026605014,7.504757350315814,3.6457089104441494,0.8849970811441915,23.28477778514257,-110322.9,1.0,0,0,Final hold-out test metrics for M3 with the specified annual and daily Fourier harmonic count.
+K=2,2,34258,8565,4.873002817993166,7.4477192691839935,3.6071888964025454,0.8830122591943957,22.965738041371203,-109852.2,1.0,0,0,Final hold-out test metrics for M3 with the specified annual and daily Fourier harmonic count.
+K=3,3,34258,8565,4.86772703583028,7.457425593917368,3.604178942852141,0.8851138353765324,22.970455888750514,-109826.1,1.0,0,0,Final hold-out test metrics for M3 with the specified annual and daily Fourier harmonic count.

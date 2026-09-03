@@ -1,18 +1,15 @@
-"""Generate the public manuscript table set.
-
-The final submitted LaTeX tables are authoritative for captions, labels, and
-formatting. This script copies those accepted tables into ``tables/generated``
-and exports the corresponding frozen analytical CSV sources under
-``tables/machine_readable``.
-"""
+"""Generate the public manuscript table set from frozen CSV sources."""
 
 from __future__ import annotations
 
 import shutil
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REFERENCE_TABLES = ROOT / "tables" / "reference"
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(ROOT))
+
 GENERATED_TABLES = ROOT / "tables" / "generated"
 MACHINE_READABLE = ROOT / "tables" / "machine_readable"
 TABLE_SOURCES_DIR = ROOT / "data" / "frozen_results" / "table_sources"
@@ -46,11 +43,13 @@ def _copy(src: Path, dst: Path) -> None:
 
 
 def main() -> None:
+    from src.tables.publication import build_table
+
     GENERATED_TABLES.mkdir(parents=True, exist_ok=True)
     MACHINE_READABLE.mkdir(parents=True, exist_ok=True)
 
     for stem, source in TABLE_SOURCES.items():
-        _copy(REFERENCE_TABLES / f"{stem}.tex", GENERATED_TABLES / f"{stem}.tex")
+        build_table(stem, GENERATED_TABLES)
         _copy(TABLE_SOURCES_DIR / source, MACHINE_READABLE / f"{stem}.csv")
 
     generated = sorted(p.relative_to(ROOT).as_posix() for p in GENERATED_TABLES.glob("*.tex"))

@@ -36,7 +36,7 @@ data/frozen_results/table_sources/table_s2_loo_waic.csv,791
 data/frozen_results/table_sources/table_s3_sensitivity.csv,410
 data/frozen_results/table_sources/table_s4_sensitivity_assessment.csv,2780
 data/frozen_results/table_sources/table_s5_yearly_holdouts.csv,4642
-data/frozen_results/table_sources/table_s6_fourier_sensitivity.csv,698
+data/frozen_results/table_sources/table_s6_fourier_sensitivity.csv,797
 data/frozen_results/table_sources/table_s7_phi_diagnostics.csv,903
 data/frozen_results/table_sources/table_s8_phi_parameterization.csv,1789
 data/frozen_results/table_sources/table_s9_missingness_audit.csv,2597
@@ -47,8 +47,8 @@ docs/DATA_AVAILABILITY_TEXT.md,1057
 docs/DATA_PROVENANCE.md,1716
 docs/FIGURE_MANIFEST.md,5069
 docs/REPRODUCIBILITY.md,1947
-docs/TABLE_MANIFEST.md,3711
-docs/VALIDATION_REPORT.md,2586
+docs/TABLE_MANIFEST.md,3733
+docs/VALIDATION_REPORT.md,2676
 environment.yml,163
 figure_manifest.yaml,869
 figures/generated/main/dag.tex,4012
@@ -92,12 +92,12 @@ LICENSE,1090
 LICENSE-CONTENT.md,659
 Makefile,491
 pyproject.toml,455
-README.md,5519
-release_manifest.csv,9288
+README.md,5725
+release_manifest.csv,9211
 requirements.txt,43
 scripts/generate_all_figures.py,2922
-scripts/generate_all_tables.py,2612
-scripts/validate_release.py,7005
+scripts/generate_all_tables.py,2421
+scripts/validate_release.py,7562
 src/config.py,1066
 src/figures/__init__.py,0
 src/figures/publication/__init__.py,0
@@ -114,6 +114,8 @@ src/figures/publication/supplementary/s2_residual_diagnostics.py,3462
 src/figures/publication/supplementary/s3_pareto_k_diagnostics.py,3482
 src/figures/publication/supplementary/s4_sensitivity_comparison.py,5882
 src/figures/publication/supplementary/s5_high_pollution_safeguard.py,16615
+src/tables/__init__.py,1
+src/tables/publication.py,24451
 table_manifest.yaml,905
 tables/generated/table1_data_summary.tex,911
 tables/generated/table2_model_definitions.tex,1050
@@ -145,7 +147,7 @@ tables/machine_readable/table_s2_loo_waic.csv,791
 tables/machine_readable/table_s3_sensitivity.csv,410
 tables/machine_readable/table_s4_sensitivity_assessment.csv,2780
 tables/machine_readable/table_s5_yearly_holdouts.csv,4642
-tables/machine_readable/table_s6_fourier_sensitivity.csv,698
+tables/machine_readable/table_s6_fourier_sensitivity.csv,797
 tables/machine_readable/table_s7_phi_diagnostics.csv,903
 tables/machine_readable/table_s8_phi_parameterization.csv,1789
 tables/machine_readable/table_s9_missingness_audit.csv,2597

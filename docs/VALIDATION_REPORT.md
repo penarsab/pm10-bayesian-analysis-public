@@ -50,17 +50,18 @@ preview.
 
 ## Table validation
 
-The table generator wrote 17 manuscript-ready LaTeX files to
-`tables/generated/` and 17 machine-readable CSV files to
+The table generator rendered 17 manuscript-ready LaTeX files from frozen CSV
+sources to `tables/generated/` and exported 17 machine-readable CSV files to
 `tables/machine_readable/`. The generated LaTeX files were compared against
 `tables/reference/` and matched exactly.
 
 ## Package validation
 
 The release validator checked required reference figures, required generated
-figures, required reference and generated tables, required frozen source files,
-machine-readable tables, prohibited private paths, NetCDF exclusion, and Python
-cache exclusion. The validation status was `passed`.
+figures, required reference and generated tables, generated-table agreement
+with reference LaTeX files, required frozen source files, machine-readable
+tables, prohibited private paths, NetCDF exclusion, and Python cache exclusion.
+The validation status was `passed`.
 
 `release_manifest.csv` records the current public package file inventory and is
 rewritten by `scripts/validate_release.py`.

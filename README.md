@@ -45,9 +45,9 @@ keeps the included generated PNG preview.
 - `configs/`: palette, rendering, figure-size, and reproduction configuration;
 - `src/figures/publication/`: accepted figure-generation code;
 - `figures/reference/`: final accepted figure assets from the manuscript;
-- `figures/generated/`: generated/copied figure assets created by this package;
+- `figures/generated/`: figure assets created by this package;
 - `tables/reference/`: final accepted LaTeX tables from the manuscript;
-- `tables/generated/`: generated/copied LaTeX tables created by this package;
+- `tables/generated/`: LaTeX tables generated from frozen CSV sources;
 - `tables/machine_readable/`: CSV representations of all manuscript tables;
 - `scripts/`: release-generation and validation entry points;
 - `docs/`: provenance, scope, figure manifest, table manifest, and validation records.
@@ -100,6 +100,10 @@ Generate all manuscript tables:
 python scripts/generate_all_tables.py
 ```
 
+The table script renders manuscript-ready LaTeX from the frozen CSV files under
+`data/frozen_results/table_sources/` and exports the same sources under
+`tables/machine_readable/`.
+
 Generate and validate the complete public asset set:
 
 ```bash
@@ -115,9 +119,9 @@ subsampling, or bootstrap resampling is performed by the public scripts.
 python scripts/validate_release.py
 ```
 
-Validation checks required main and supplementary assets, required frozen source
-CSV files, prohibited private/work files, NetCDF exclusion, and machine-specific
-paths.
+Validation checks required main and supplementary assets, generated-table
+agreement with reference LaTeX files, required frozen source CSV files,
+prohibited private/work files, NetCDF exclusion, and machine-specific paths.
 
 ## Citation
 
